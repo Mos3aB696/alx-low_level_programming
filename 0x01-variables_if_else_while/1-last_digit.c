@@ -6,7 +6,7 @@
  * Description: using the main function
  * this funtion print the last digit
  * Return: 0
-*/
+ */
 int main(void)
 {
 	int n;
