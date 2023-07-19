@@ -6,7 +6,5 @@
  */
 int _islower(int c)
 {
-	char c;
-
 	'a' <= c <= 'z' ? return (1) : return (0);
 }
