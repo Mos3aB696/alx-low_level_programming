@@ -10,7 +10,7 @@ int main(void)
 	long int fNum = 1, sNum = 2, sum;
 	int i;
 
-	printf("%lu %lu, ", fNum, sNum);
+	printf("%lu, %lu, ", fNum, sNum);
 	for (i = 3; i <= 50; i++)
 	{
 		sum = fNum + sNum;
