@@ -7,15 +7,23 @@
 
 int main(void)
 {
-	int i, fNum = 1, sNum = 2, sum;
-	printf("%d %d, ", fNum, sNum);
-	for (i = 0; i < 49; i++)
+	long int fNum = 1, sNum = 2, sum;
+	int i;
+	printf("%lu %lu, ", fNum, sNum);
+	for (i = 3; i <= 50; i++)
 	{
 		sum = fNum + sNum;
 		fNum = sNum;
 		sNum = sum;
-		printf("%d, ", sum);
+		if (i == 50)
+		{
+			printf("%lu\n", sum);
+		}
+		else
+		{
+
+			printf("%lu, ", sum);
+		}
 	}
-	printf("%d \n", 1776683621);
 	return (0);
 }
