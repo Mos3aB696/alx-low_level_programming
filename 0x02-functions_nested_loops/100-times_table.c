@@ -6,7 +6,7 @@
  */
 void print_times_table(int n)
 {
-	if (n > 0 && n < 15)
+	if (n >= 0 && n <= 15)
 	{
 		int i, j, total;
 
@@ -37,9 +37,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-	}
-	else
-	{
-		return (0);
 	}
 }
