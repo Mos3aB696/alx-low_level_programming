@@ -16,5 +16,6 @@ int main(void)
 		sNum = sum;
 		printf("%d, ", sum);
 	}
-	printf("%d", 1776683621);
+	printf("%d \n", 1776683621);
+	return (0);
 }
