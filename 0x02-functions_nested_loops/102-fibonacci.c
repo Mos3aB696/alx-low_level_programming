@@ -18,7 +18,7 @@ int main(void)
 		sNum = sum;
 		if (i == 50)
 		{
-			printf("%lu \n", sum);
+			printf("%lu\n", sum);
 		}
 		else
 		{
