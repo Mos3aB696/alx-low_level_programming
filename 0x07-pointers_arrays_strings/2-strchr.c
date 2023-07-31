@@ -5,7 +5,7 @@
  * @s: String
  * @c: Character
  *
- * Return: s
+ * Return: NULL
 */
 
 char *_strchr(char *s, char c)
