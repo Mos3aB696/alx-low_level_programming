@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	char *s;
+	char *s = NULL;
 	unsigned int i;
 
 	if (str == NULL)
@@ -24,8 +24,6 @@ char *_strdup(char *str)
 			s[i] = str[i];
 		}
 	}
-	else
-		return (NULL);
 	s[i] = '\0';
 
 	return (s);
