@@ -12,25 +12,22 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	/* get length (s1, s2) */
-	unsigned int lenOne = strlen(s1), lenTwo = strlen(s2);
+	unsigned int lenOne = strlen(s1);
+	unsigned int lenTwo = strlen(s2);
 	/* for loop */
 	unsigned int i, j;
 	char *ptr;
 	/*check if equal NULL*/
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	if (s1 == NULL || s2 == NULL)
+		return ("");
 	/*check if n >= lenTwo*/
-	if (n >= lenTwo)
+	if (lenTwo <= n)
 	{
 		n = lenTwo;
-		ptr = malloc(sizeof(char) * (lenOne + lenTwo + 1));
-	}
-	else
-	{
 		ptr = malloc(sizeof(char) * (lenOne + n + 1));
 	}
+	else
+		ptr = malloc(sizeof(char) * (lenOne + n + 1));
 	/*check if ptr == NULL*/
 	if (ptr == NULL)
 		return (NULL);
