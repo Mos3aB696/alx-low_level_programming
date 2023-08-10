@@ -22,13 +22,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	/*check if n >= lenTwo*/
-	if (lenTwo <= n)
+	if (n >= lenTwo)
 	{
 		n = lenTwo;
 		ptr = malloc(sizeof(char) * (lenOne + n + 1));
 	}
 	else
+	{
 		ptr = malloc(sizeof(char) * (lenOne + n + 1));
+	}
 	/*check if ptr == NULL*/
 	if (ptr == NULL)
 		return (NULL);
