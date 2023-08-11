@@ -12,14 +12,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	/* get length (s1, s2) */
-
 	unsigned int lenOne = strlen(s1), lenTwo = strlen(s2);
 	/* for loop */
 	unsigned int i, j;
 	char *ptr;
 	/*check if equal NULL*/
-	if (s1 == NULL || s2 == NULL)
-		return ("");
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	/*check if n >= lenTwo*/
 	if (lenTwo <= n)
 	{
