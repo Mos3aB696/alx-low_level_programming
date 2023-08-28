@@ -5,7 +5,7 @@
  * @head: the first node
  * @n: the number
  *
- * Return:
+ * Return: data
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
@@ -16,11 +16,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	if (data == NULL)
 		return (NULL);
-	else
-	{
-		data->n = n;
-		data->next = *head;
-		*head = data;
-	}
+
+	data->n = n;
+	data->next = *head;
+	*head = data;
+
 	return (data);
 }
