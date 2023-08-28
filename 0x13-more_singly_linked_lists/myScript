@@ -1,0 +1,4 @@
+read fileName
+git add $fileName
+git commit -m 'done'
+git push
