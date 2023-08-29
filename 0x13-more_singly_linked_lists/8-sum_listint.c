@@ -4,7 +4,7 @@
  * sum_listint - sum of all the data (n) of a listint_t linked list.
  * @head: Struct
  *
- * Return:
+ * Return: sum
  */
 
 int sum_listint(listint_t *head)
