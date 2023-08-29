@@ -11,10 +11,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *data;
 
-	if (head == NULL)
-		return;
-
-	while (*head != NULL)
+	while (*head != NULL && head != NULL)
 	{
 		data = (*head)->next;
 		free(*head);
