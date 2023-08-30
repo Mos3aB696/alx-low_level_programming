@@ -7,7 +7,7 @@
  * @index: the index
  *
  * Return: (1) on succeeded
- * 				 (-1) on failed
+ *				(-1) on failed
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
