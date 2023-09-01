@@ -5,7 +5,7 @@
  * @n: Number
  * @index: the index
  *
- * Return: 1 
+ * Return: 1
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
