@@ -11,11 +11,13 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *ptrOne = haystack, *ptrTwo = needle;
 	char *ptrOneAdv = haystack;
+
 	while (*++ptrOneAdv)
 		;
 	while (*ptrOne)
 	{
 		char *ptrOneBegin = ptrOne;
+
 		ptrTwo = needle;
 		while (*ptrOne && *ptrTwo && *ptrOne == *ptrTwo)
 		{
@@ -23,8 +25,8 @@ char *_strstr(char *haystack, char *needle)
 			ptrTwo++;
 		}
 		if (!*ptrTwo)
-			return ptrOneBegin;
+			return (ptrOneBegin);
 		ptrOne = ptrOneBegin + 1;
 	}
-	return NULL;
+	return (NULL);
 }
