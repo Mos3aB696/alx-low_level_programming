@@ -1,6 +1,10 @@
 #include "lists.h"
 /**
+ * dlistint_len - function that returns the number of
+ * elements in a linked dlistint_t list.
+ * @h: node
  *
+ * Return: count
  */
 
 size_t dlistint_len(const dlistint_t *h)
